@@ -1,0 +1,32 @@
+header{
+    font-size: 32px;
+    background-color: #5a5ae7;
+    color: black;
+    padding-left: 30px;
+}
+
+.hello{
+    background-color: rgb(115, 115, 115);
+}
+
+.card{
+    display: flex;
+    align-items: center;
+}
+
+.devi{
+    background-color: rgb(64, 11, 114);
+    text-align: center;
+    width: 100%;
+    border: 0px;
+}
+
+.devicon{
+    height: 100px;
+    width: 100px;
+}
+
+.devicon:hover{
+    height: 120px;
+    width: 120px;
+}
