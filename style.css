@@ -1,21 +1,60 @@
+.info{
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+.container {
+    display: flex;
+  }
+
+.formatura{
+    border-radius: 45%;
+    height: 310px;
+    width: 410px;
+}
+
+li{
+    font-size: 20px;
+}
+
 header{
     font-size: 32px;
-    background-color: #5a5ae7;
+    background-color: #181841;
     color: black;
-    padding-left: 30px;
+    padding-left: 40px;
+}
+
+footer{
+    background-color: #181841;
+    color: rgb(0, 86, 179);
+    padding-left: 40px;
+    margin-top: 100px;
+    display: flex;
+    height: 100px;
+}
+
+.about{
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.paragrafo{
+    font-size: 24px;
+}
+
+section{
+    border: inherit;
+    border-collapse: inherit;
 }
 
 .hello{
-    background-color: rgb(115, 115, 115);
-}
+    background-color: rgb(148, 56, 234);
+    text-align: center;
 
-.card{
-    display: flex;
-    align-items: center;
 }
 
 .devi{
-    background-color: rgb(64, 11, 114);
+    background-color: rgb(155, 155, 155);
     text-align: center;
     width: 100%;
     border: 0px;
@@ -29,4 +68,9 @@ header{
 .devicon:hover{
     height: 120px;
     width: 120px;
+}
+
+.devicon:active{
+    height: 110px;
+    width: 110px;
 }

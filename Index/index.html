@@ -3,27 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Meu próprio website</title>
 </head>
-<body style="background-color: blue;">
+<body style="background-color: rgb(154, 154, 154);">
         <!-- Cabeçalho -->
         <header>
+<<<<<<< HEAD:index.html
            <a href="index.html"><i class="bi bi-house-door-fill">Início</i></a>
+=======
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill">Início</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre mim.html"><i class="bi bi-journal-code">Sobre mim</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+>>>>>>> 50a280a (Continuação do website):Index/index.html
         </header>
-        <div class="hello">
-        <h1><strong>Olá mundo! 👋</strong></h1>
-            <p>💪🏻 Me especializando em desenvolvimento web</p>
-            <p>🖥 Usando Windows 11 Pro</p>
-        </div>
 
         <!-- Tecnologias que você usa -->
-        <section class="card" id="technologies">
-            <div class="devi">
+        <section class="devi" id="technologies">
+            <div style="background-color: rgb(176, 91, 255);" class="jumbotron">
+                <h1 class="display-4"><strong>Olá mundo! 👋</strong></h1>
+                <p class="paragrafo"><strong>💪🏻 Me especializando em desenvolvimento web</strong></p>
+                <hr class="my-4">
+                <p class="paragrafo">Como quero me especializar nisto, criei meu próprio website para portifólio contendo informações sobre mim e minha carreira</p>
+              </div>
+            <div col="sm-12">
             <h2>Tecnologias que utilizo</h2>
-            <div class="tech-icons">
+            <div>
                 <a href="https://www.google.com/search?client=opera-gx&q=angular&sourceid=opera&ie=UTF-8&oe=UTF-8"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="AngularJS" /></a>
                 <a href="https://www.google.com/search?q=arduino&client=opera-gx&hs=PSk&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zp4ezze6oRlOJSglhmdbyb91DEoaw%3A1740669913843&ei=2YPAZ6mUM6zN1sQPwfCfoA0&ved=0ahUKEwjp5IrflOSLAxWsppUCHUH4B9QQ4dUDCBA&uact=5&oq=arduino&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2FyZHVpbm8yBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESPwdUIMFWOsYcAF4AZABAJgBlQGgAbALqgEEMC4xMrgBA8gBAPgBAZgCDaACugzCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICDBAjGIAEGBMYJxiKBcICChAjGIAEGCcYigXCAgoQABiABBhDGIoFwgIKEAAYgAQYFBiHAsICCxAuGIAEGMcBGK8BwgIKEC4YgAQYQxiKBcICBRAuGIAEmAMAiAYBkAYKkgcEMS4xMqAH81g&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg" alt="Arduino" /></a>
                 <a href="https://www.google.com/search?q=bootstrap&client=opera-gx&hs=IoP&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zr9doLpoYx9tIDjHDslEc4jM8NgwQ%3A1740669987635&ei=I4TAZ4SzJrTa1sQP9rLF0Q8&ved=0ahUKEwjE0KKCleSLAxU0rZUCHXZZMfoQ4dUDCBA&uact=5&oq=bootstrap&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWJvb3RzdHJhcDIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIhStQyg1YhihwAngBkAEAmAGsAqABwA6qAQcwLjYuMy4xuAEDyAEA-AEBmAIMoAK7D8ICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIKECMYgAQYJxiKBcICCxAuGIAEGNEDGMcBwgIHEAAYgAQYCsICCxAuGIAEGMcBGK8BmAMAiAYBkAYKkgcHMi42LjMuMaAH_jc&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" /></a>
@@ -35,42 +50,25 @@
                 <a href="https://www.google.com/search?q=javascript&client=opera-gx&hs=mvP&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zoOpBXg71iMFmrY0gK6Rg0elPPLlA%3A1740670451542&ei=84XAZ4fnIPyj1sQPj-DCqAw&ved=0ahUKEwjHrL3fluSLAxX8kZUCHQ-wEMUQ4dUDCBA&uact=5&oq=javascript&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmphdmFzY3JpcHQyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI-ixQ5AhYhCtwAXgBkAEAmAHdBaAByQuqAQkwLjMuMS42LTG4AQPIAQD4AQGYAgagApcMwgIHECMYsAMYJ8ICChAAGLADGNYEGEfCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIXEC4YgAQYsAMYARhDGMgDGIoFGArYAQGYAwCIBgGQBgu6BgQIARgIkgcJMS4yLjIuNS0xoAefJg&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /></a>
                 <a href="https://www.google.com/search?q=sql+server&client=opera-gx&hs=5vP&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zqugeqRqJS-WGQQgH3d-CZQCCFz4g%3A1740670470715&ei=BobAZ7yxK7bZ1sQPtNnWuAw&ved=0ahUKEwi8zM_oluSLAxW2rJUCHbSsFccQ4dUDCBA&uact=5&oq=sql+server&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnNxbCBzZXJ2ZXIyChAjGIAEGCcYigUyChAjGIAEGCcYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEihElAAWIUQcAB4AZABAJgBtwKgAe8PqgEHMC40LjQuMbgBA8gBAPgBAZgCCaAC3hDCAgwQIxiABBgTGCcYigXCAgQQIxgnwgILEC4YgAQY0QMYxwGYAwCSBwcwLjIuNi4xoAfkSg&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" alt="SQL Server" /></a>
                 </div>
-                <div class="tech-icons">
+                <div>
                 <a href="https://www.google.com/search?q=node+js&client=opera-gx&hs=0G5&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zqqI9IENIhcYL6YjgTJ6gFii2UGFQ%3A1740670489927&ei=GYbAZ_WeONPL1sQPnqSLsA4&ved=0ahUKEwi1j-TxluSLAxXTpZUCHR7SAuYQ4dUDCBA&uact=5&oq=node+js&gs_lp=Egxnd3Mtd2l6LXNlcnAiB25vZGUganMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIKEAAYgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI1RxQwwpYsBtwAXgBkAEAmAHYAaABvgqqAQUwLjQuM7gBA8gBAPgBAZgCCKAClgvCAgcQIxiwAxgnwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgoQABiABBhDGIoFwgIFEC4YgATCAgsQLhiABBjRAxjHAZgDAIgGAZAGCpIHBTEuMi41oAf6Jg&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" /></a>
                 <a href="https://www.google.com/search?q=php&client=opera-gx&hs=3bk&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zo_7uhTB7VuzW1uNWcDap3l1KOlEA%3A1740670511713&ei=L4bAZ5edK_3P1sQP3vm8qAQ&ved=0ahUKEwjX8JX8luSLAxX9p5UCHd48D0UQ4dUDCBA&uact=5&oq=php&gs_lp=Egxnd3Mtd2l6LXNlcnAiA3BocDIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigVIjxBQ-AlYrg5wAXgBkAEAmAHUAaAB6QKqAQUwLjEuMbgBA8gBAPgBAZgCA6AClgPCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICExAuGIAEGMcBGCcYigUYjgUYrwHCAgoQIxiABBgnGIoFwgIEECMYJ8ICCBAuGIAEGNQCwgIgEC4YgAQYxwEYigUYjgUYrwEYlwUY3AQY3gQY4ATYAQGYAwCIBgGQBgq6BgYIARABGBSSBwUxLjEuMaAH3RM&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" /></a>
                 <a href="https://www.google.com/search?q=python&client=opera-gx&hs=Wck&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zoaZrgqHmdvDjR__NaakFosvgTZzg%3A1740670540674&ei=TIbAZ-jwKPWG1sQPpYPdoQw&ved=0ahUKEwjoxv2Jl-SLAxV1g5UCHaVBN8QQ4dUDCBA&uact=5&oq=python&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnB5dGhvbjIKEAAYgAQYQxiKBTIFEAAYgAQyEBAuGIAEGNEDGEMYxwEYigUyBRAAGIAEMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABEjCFFCjB1iUEXABeAGQAQCYAZ8BoAG5B6oBAzAuN7gBA8gBAPgBAZgCB6ACjgfCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICExAuGIAEGLADGEMYyAMYigXYAQHCAgwQIxiABBgTGCcYigXCAhMQLhiABBjHARgnGIoFGI4FGK8BwgIKECMYgAQYJxiKBZgDAIgGAZAGDLoGBAgBGAiSBwMxLjagB5ox&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" /></a>
                 <a href="https://www.google.com/search?q=typescript&client=opera-gx&hs=vck&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zpKKMB1ivFpaze3TThd-yFUmunoSw%3A1740670565938&ei=ZYbAZ6r3OOLT1sQP74e12Q4&ved=0ahUKEwjqvYOWl-SLAxXiqZUCHe9DLesQ4dUDCBA&uact=5&oq=typescript&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnR5cGVzY3JpcHQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBhDGIoFMgUQABiABDIFEAAYgARI4R9QwglYrx5wAXgBkAEAmAGGA6AB5g-qAQcwLjcuMC4zuAEDyAEA-AEBmAILoAL5EMICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgITEC4YgAQYsAMYQxjIAxiKBdgBAcICGRAuGIAEGLADGNEDGEMYxwEYyAMYigXYAQHCAgoQIxiABBgnGIoFwgIMEAAYgAQYQxiKBRgKwgIKEC4YgAQYQxiKBcICCRAAGIAEGAEYCsICBxAAGIAEGAqYAwCIBgGQBgy6BgQIARgIkgcJMS43LjAuMi4xoAfaOw&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" /></a>
             </div>
             </div>
-        </section>
-    
-        <!-- Estudo e Experiência -->
-        <section class="card" id="about">
-            <h2>Sobre Mim</h2>
-            <p>📚 Aqui você encontrará projetos que refletem minha jornada de aprendizado. Atualmente, estou estudando as seguintes linguagens e ferramentas:</p>
-        </section>
-    
-            <!-- Estatísticas do GitHub -->
-            <div class="card text-center" col="sm-12">
-                <div class="card-header">
+            <h1>Sobre Mim</h1>
+            <p style="font-size: 24px;" class="about">📚 Aqui você encontrará projetos que refletem minha jornada de aprendizado. Atualmente, estou estudando as seguintes linguagens e ferramentas:</p>
+        <!-- Estatísticas do GitHub -->
                 <h2>Minhas Estatísticas no GitHub</h2>
-                </div>
-                <section id="github-stats">
-            <div>
                 <a href="https://github.com/GuilhermeCN-web">
                     <img height="300px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GuilhermeCN-web&layout=compact&langs_count=16&theme=dracula" alt="GitHub stats" />
                 </a>
-            </div>
-        </section>
-            </div>
-        
-       
+            </section>
     
         <footer>
-            <p>🚀 Sempre me esforçando para aprender mais e criar sistemas e websites ainda melhores!</p>
+            <p class="paragrafo">🚀 Sempre me esforçando para aprender mais e criar sistemas e websites ainda melhores!</p>
         </footer>
-    
-        <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
