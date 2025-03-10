@@ -13,7 +13,7 @@
 
 .formatura{
     border-radius: 50%;
-    height: 310px;
+    height: 400px;
     width: 340px;
 }
 
@@ -70,13 +70,7 @@ section{
 }
 
 .devicon:hover{
-    height: 120px;
-    width: 120px;
-}
-
-.devicon:active{
-    height: 110px;
-    width: 110px;
+    
 }
 
 .scout{
