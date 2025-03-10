@@ -42,8 +42,8 @@ function atualizarInformacoes() {
   const idade = calcularIdade();
   const anosExperiencia = calcularTempoExperiencia();
 
-  idadeElement.textContent = `Minha idade: ${idade} anos`;
-  experienciaElement.textContent = `Tempo de experiência: ${anosExperiencia} anos`;
+  idadeElement.innerHTML = `<i class="bi bi-calendar-plus"></i> Minha idade: ${idade} anos`;
+  experienciaElement.innerHTML = `<i class="bi bi-clipboard-data"></i> Tempo de experiência: ${anosExperiencia} anos`;
 }
 
 // Atualiza as informações assim que a página for carregada
