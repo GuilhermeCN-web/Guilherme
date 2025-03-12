@@ -3,6 +3,19 @@
     margin-bottom: 100px;
 }
 
+.nav-link{
+    font-size: 30px;
+}
+
+.nav-link:hover{
+    color: #ffffff;
+    font-size: 31px;
+}
+
+.card-body{
+    background-color: rgb(168, 168, 168);
+}
+
 .container {
     display: flex;
     text-align: left;
@@ -30,7 +43,7 @@ header{
 
 footer{
     background-color: #181841;
-    color: rgb(0, 86, 179);
+    color: #ffffff;
     padding-left: 40px;
     margin-top: 100px;
     display: flex;
@@ -58,7 +71,6 @@ section{
 }
 
 .devi{
-    background-color: rgb(155, 155, 155);
     text-align: center;
     width: 100%;
     border: 0px;
@@ -70,7 +82,8 @@ section{
 }
 
 .devicon:hover{
-    
+    height: 105px;
+    width: 105px;
 }
 
 .scout{

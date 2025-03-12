@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pergunta10</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h2>Dado o seguinte código Java, qual será a saída?</h2>
+    <pre>
+        class A {
+            void show() { System.out.println("Classe A"); }
+        }
+        
+        class B extends A {
+            void show() { System.out.println("Classe B"); }
+        }
+        
+        public class Test {
+            public static void main(String[] args) {
+                A obj = new B();
+                obj.show();
+            }
+        }
+    </pre>
+    <button id="resposta-a" class="resposta">(A) Classe A</button>
+    <br>
+    <button id="resposta-b" class="resposta">(B) Erro de compilação</button>
+    <br>
+    <button id="resposta-c" class="resposta">(C) Classe B</button>
+    <br>
+    <button id="resposta-d" class="resposta">(D) null</button>
+
+    <script src="../Scripts/script10.js"></script>
+</body>
+</html>
