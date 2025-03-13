@@ -1,3 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Garantir que o corpo ocupe toda a tela */
+    overflow-x: hidden; /* Impede o rolar lateral */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  overflow-y: auto; 
+  background-color: #000; /* Fundo preto para as estrelas ficarem visíveis */
+}
+
+.star {
+  position: absolute;
+  width: 2px; /* Largura da estrela */
+  height: 2px; /* Altura da estrela */
+  background-color: white; /* Cor das estrelas */
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle infinite; /* Animação para as estrelas brilharem */
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Estilo para o conteúdo */
+.content {
+    color: white;
+    padding: 20px;
+    height: 2000px; /* Exemplo de conteúdo longo para rolar */
+    text-align: center;
+}
+
+
 .info{
     padding-left: 20px;
     margin-bottom: 100px;
@@ -6,6 +52,8 @@
 .nav-link{
     font-size: 30px;
 }
+
+
 
 .nav-link:hover{
     color: #ffffff;
@@ -26,7 +74,7 @@
 
 .formatura{
     border-radius: 50%;
-    height: 400px;
+    height: 200px;
     width: 340px;
 }
 
@@ -55,10 +103,27 @@ footer{
     padding-right: 180px;
 }
 
-.paragrafo{
-    font-size: 24px;
-}
-
+/* Animação de digitação */
+.typing span {
+    display: inline-block;
+    opacity: 0;
+    animation: typing 0.05s steps(1) forwards;
+  }
+  
+  @keyframes typing {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .jumbotron {
+    padding: 50px;
+    text-align: center;
+  }
+  
 section{
     border: inherit;
     border-collapse: inherit;
@@ -88,5 +153,124 @@ section{
 
 .scout{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
+
+/* Estilo da div com imagem de fundo 
+.background-box {
+    width: 100%;
+    height: 3000px;
+    background-image: url('./Img/formatura.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    background-color: black;
+  }
+  
+  #space {
+    position: relative;
+    height: 450px;
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+  }
+  
+  #earth, #saturn, #mars, #uranus, #neptune {
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #earth {
+    width: 100px;
+    height: 100px;
+    background-image: url('./Img/terra.jpg');
+    animation: moveEarth 30s infinite linear;
+    top: 20%;
+    left: 20%;
+  }
+
+  #uranus {
+    width: 140px;
+    height: 140px;
+    background-image: url('./Img/urano.jpg');
+    animation: moveUranus 28s infinite linear;
+    top: 20%;
+    left: 20%;
+  }
+
+  #mars {
+    width: 80px;
+    height: 80px;
+    background-image: url('./Img/marte.jpg');
+    animation: moveMars 50s infinite linear;
+    top: 25%;
+    left: 25%;
+  }
+
+  #saturn {
+    width: 160px;
+    height: 160px;
+    background-image: url('./Img/saturno.jpg');
+    animation: moveSaturn 20s infinite linear;
+    top: 10%;
+    left: 70%;
+  }
+  
+  #neptune {
+    width: 140px;
+    height: 140px;
+    background-image: url('./Img/netuno.jpg');
+    animation: moveNeptune 40s infinite linear;
+    top: 10%;
+    left: 70%;
+  }
+
+  @keyframes moveEarth {
+    0% { top: 20%; left: 20%; }
+    100% { top: 80%; left: 50%; }
+  }
+
+  @keyframes moveUranus {
+    0% { top: 20%; left: 20%; }
+    100% { top: 80%; left: 80%; }
+  }
+
+  @keyframes moveMars {
+    0% { top: 70%; left: 10%; }
+    100% { top: 70%; left: 70%; }
+  }
+  
+  @keyframes moveSaturn {
+    0% { top: 10%; left: 70%; }
+    100% { top: 20%; left: 30%; }
+  }
+
+  @keyframes moveNeptune {
+    0% { top: 10%; left: 70%; }
+    100% { top: 90%; left: 90%; }
+  }

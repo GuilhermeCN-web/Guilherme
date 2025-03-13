@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Meu próprio website</title>
 </head>
-<body>
+<body style="background-color: black;">
         <!-- Cabeçalho -->
         <header>
             <ul class="nav">
@@ -23,16 +23,19 @@
                   </li>
               </ul>
         </header>
-
         <!-- Tecnologias que você usa -->
         <section class="devi" id="technologies">
-            <div style="background-color: rgb(168, 168, 168);" class="jumbotron">
-                <h1 class="display-4"><strong>Olá mundo! 👋</strong></h1>
-                <p class="paragrafo"><strong>💪🏻 Me especializando em desenvolvimento web</strong></p>
+            <div style="background-color: rgb(0, 0, 0); color: white;" class="jumbotron">
+                <h1 class="display-4"><strong><span id="titulo"></span></strong></h1>
+                <p class="paragrafo"><strong><span id="paragrafo1"></span></strong></p>
                 <hr class="my-4">
-                <p class="paragrafo">Como quero me especializar nisto, criei meu próprio website para portifólio contendo informações sobre mim e minha carreira</p>
-              </div>
-            <div col="sm-12">
+                <p class="paragrafo"><span id="paragrafo2"></span></p>
+              </div>      
+              <div id="space">
+                <div id="earth"></div>
+                <div id="saturn"></div>
+              </div>                                   
+            <div style="background-color: black; color: white; margin-bottom: 500px;" col="sm-12">
             <h2>Tecnologias e linguagens que estudei e estudo:</h2>
             <div>
                 <a href="https://www.google.com/search?client=opera-gx&q=angular&sourceid=opera&ie=UTF-8&oe=UTF-8"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="AngularJS" /></a>
@@ -53,10 +56,15 @@
                 <a href="https://www.google.com/search?q=typescript&client=opera-gx&hs=vck&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zpKKMB1ivFpaze3TThd-yFUmunoSw%3A1740670565938&ei=ZYbAZ6r3OOLT1sQP74e12Q4&ved=0ahUKEwjqvYOWl-SLAxXiqZUCHe9DLesQ4dUDCBA&uact=5&oq=typescript&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnR5cGVzY3JpcHQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBhDGIoFMgUQABiABDIFEAAYgARI4R9QwglYrx5wAXgBkAEAmAGGA6AB5g-qAQcwLjcuMC4zuAEDyAEA-AEBmAILoAL5EMICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgITEC4YgAQYsAMYQxjIAxiKBdgBAcICGRAuGIAEGLADGNEDGEMYxwEYyAMYigXYAQHCAgoQIxiABBgnGIoFwgIMEAAYgAQYQxiKBRgKwgIKEC4YgAQYQxiKBcICCRAAGIAEGAEYCsICBxAAGIAEGAqYAwCIBgGQBgy6BgQIARgIkgcJMS43LjAuMi4xoAfaOw&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" /></a>
             </div>
             </div>
-            <h1>Sobre Mim:</h1>
-            <p style="font-size: 24px;" class="about">📚 Aqui você encontrará projetos que refletem minha jornada de aprendizado. Atualmente, estou estudando as seguintes linguagens e ferramentas:</p>
+            <div id="space">
+                <div id="mars"></div>
+                <div id="uranus"></div>
+                <div id="neptune"></div>
+            </div> 
+            <h1 style="color: white;">Sobre Mim:</h1>
+            <p style="font-size: 24px; color: white;" class="about">📚 Aqui você encontrará projetos que refletem minha jornada de aprendizado. Atualmente, estou estudando as seguintes linguagens e ferramentas:</p>
         <!-- Estatísticas do GitHub -->
-                <h2>Minhas Estatísticas no GitHub:</h2>
+                <h2 style="color: white;">Minhas Estatísticas no GitHub:</h2>
                 <a href="https://github.com/GuilhermeCN-web">
                     <img height="300px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GuilhermeCN-web&layout=compact&langs_count=16&theme=dracula" alt="GitHub stats" />
                 </a>
@@ -64,7 +72,9 @@
     
         <footer>
             <p class="paragrafo">🚀 Sempre me esforçando para <span style="color: #00bfff;">aprender</span> mais e <span style="color: #00bfff;">criar sistemas e websites</span> ainda melhores!</p>
+            <p>&copy; 2025 Meu próprio website</p>
         </footer>
+        <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
