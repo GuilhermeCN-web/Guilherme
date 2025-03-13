@@ -74,7 +74,7 @@ body {
 
 .formatura{
     border-radius: 50%;
-    height: 200px;
+    height: 400px;
     width: 340px;
 }
 
@@ -147,8 +147,13 @@ section{
 }
 
 .devicon:hover{
-    height: 105px;
-    width: 105px;
+    height: 102px;
+    width: 102px;
+}
+
+.devicon:active{
+  height: 101px;
+  width: 101px;
 }
 
 .scout{
