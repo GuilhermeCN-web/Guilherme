@@ -11,7 +11,10 @@ window.onload = function() {
     typeEffect('titulo', 'Olá mundo! 👋', 70, function() {
       typeEffect('paragrafo1', '💪🏻 Me especializando em desenvolvimento web', 40, function() {
         typeEffect('paragrafo2', 'Como quero me especializar nisto, criei meu próprio website para portifólio contendo informações sobre mim e minha carreira💼', 40);
-      });
+          typeEffect('titulo2', 'Sobre mim:', 60);
+            typeEffect('paragrafo3', '📚 Aqui você encontrará projetos que refletem minha jornada de aprendizado.', 35);
+              typeEffect('titulo3', 'Minhas Estatísticas no GitHub🐱:', 100);
+          });
     });
   };
   
@@ -32,6 +35,11 @@ window.onload = function() {
       }
     }, speed);  // A velocidade de digitação
   }
-  
-  
-  
+  document.addEventListener("DOMContentLoaded", function () {
+    const icons = document.querySelectorAll(".devicon");
+    icons.forEach((icon, index) => {
+        setTimeout(() => {
+            icon.style.opacity = "1";
+        }, index * 900); // Cada ícone aparece com um intervalo de 900ms
+    });
+});

@@ -53,8 +53,6 @@ body {
     font-size: 30px;
 }
 
-
-
 .nav-link:hover{
     color: #ffffff;
     font-size: 31px;
@@ -144,6 +142,8 @@ section{
 .devicon{
     height: 100px;
     width: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .devicon:hover{
