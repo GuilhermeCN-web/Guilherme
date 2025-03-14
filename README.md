@@ -10,7 +10,7 @@ Welcome to my personal website! This platform showcases the programming language
 - **Contact**: Ways to connect with me for networking and collaboration.
 
 ## Technologies Used
-- **Frontend**: HTML, CSS, Bootstrap
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
 
 ## About Me
 I am passionate about software development, always eager to learn new technologies and improve my skills. My website reflects my journey in programming and my approach to life.
