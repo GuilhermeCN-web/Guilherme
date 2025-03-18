@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     height: 100%; /* Garantir que o corpo ocupe toda a tela */
     overflow-x: hidden; /* Impede o rolar lateral */
+    height: 100%;
+    background-color: black;
 }
 
 body {
@@ -43,6 +45,19 @@ body {
     text-align: center;
 }
 
+.card {
+  height: 100%; /* Faz os cards ocuparem toda a altura disponível */
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.card-body {
+  flex-grow: 1; /* Faz com que os cards cresçam uniformemente */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o conteúdo */
+}
 
 .info{
     padding-left: 20px;
@@ -177,23 +192,9 @@ section{
     box-sizing: border-box;
   }
   
-  body, html {
-    height: 100%;
-    background-color: black;
-  }
-  
   #space {
     position: relative;
     height: 450px;
-  }
-  
-  .star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: white;
-    border-radius: 50%;
-    animation: blink 1.5s infinite;
   }
   
   @keyframes blink {
@@ -277,4 +278,42 @@ section{
   @keyframes moveNeptune {
     0% { top: 10%; left: 70%; }
     100% { top: 90%; left: 90%; }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+    }
+    
+    .formatura {
+      max-width: 140px; /* Reduz a imagem em telas menores */
+      max-height: 140px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .info h1 {
+      word-wrap: break-word; /* Garante que palavras longas quebrem corretamente */
+      overflow-wrap: break-word;
+      max-width: 130%; /* Evita que o texto ultrapasse os limites do card */
+    }
+
+    .info p {
+      font-size: 14px;
+      display: inline-block;
+      word-break: keep-all; /* Evita quebra desnecessária */
+      line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+      word-wrap: break-word; /* Quebra palavras longas automaticamente */
+      overflow-wrap: break-word; /* Garante a quebra em navegadores mais novos */
+      flex-wrap: wrap; /* Permite que o texto se ajuste dentro da div */
+    }
+
+    .info li {
+      word-wrap: break-word; /* Garante que palavras longas quebrem corretamente */
+      overflow-wrap: break-word;
+      white-space: normal; /* Impede que o texto fique em uma única linha */
+      max-width: 130%; /* Evita que o texto ultrapasse os limites do card */
+    }    
   }
