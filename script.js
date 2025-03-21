@@ -8,12 +8,12 @@ for (let i = 0; i < 400; i++) {
 }
 
 window.onload = function() {
-    typeEffect('titulo', 'Olá mundo! 👋', 70, function() {
-      typeEffect('paragrafo1', '💪🏻 Me especializando em desenvolvimento web', 40, function() {
-        typeEffect('paragrafo2', 'Como quero me especializar nisto, criei meu próprio website para portifólio contendo informações sobre mim e minha carreira💼', 40);
-          typeEffect('titulo2', 'Sobre mim:', 60);
-            typeEffect('paragrafo3', '📚 Aqui você encontrará projetos que refletem minha jornada de aprendizado.', 35);
-              typeEffect('titulo3', 'Minhas Estatísticas no GitHub🐱:', 100);
+    typeEffect('titulo', 'Olá mundo! 👋', 90, function() {
+      typeEffect('paragrafo1', '💪🏻 Me especializando em desenvolvimento web', 60, function() {
+        typeEffect('paragrafo2', 'Como quero me especializar nisto, criei meu próprio website para portifólio contendo informações sobre mim e minha carreira💼', 60);
+          typeEffect('titulo2', 'Sobre mim:', 600);
+            typeEffect('paragrafo3', '📚 Aqui você encontrará projetos que refletem minha jornada de aprendizado.', 350);
+              typeEffect('titulo3', 'Minhas Estatísticas no GitHub🐱:', 1000);
           });
     });
   };
