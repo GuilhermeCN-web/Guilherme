@@ -1,8 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Garantir que o corpo ocupe toda a tela */
-    overflow-x: hidden; /* Impede o rolar lateral */
+    height: 100%;
+    overflow-x: hidden; 
     height: 100%;
     background-color: black;
 }
@@ -12,17 +12,17 @@ body {
     margin: 0;
     padding: 0;
   overflow-y: auto; 
-  background-color: #000; /* Fundo preto para as estrelas ficarem visíveis */
+  background-color: #000; 
 }
 
 .star {
   position: absolute;
-  width: 2px; /* Largura da estrela */
-  height: 2px; /* Altura da estrela */
-  background-color: white; /* Cor das estrelas */
+  width: 2px; 
+  height: 2px; 
+  background-color: white; 
   border-radius: 50%;
   opacity: 0.8;
-  animation: twinkle infinite; /* Animação para as estrelas brilharem */
+  animation: twinkle infinite; 
 }
 
 @keyframes twinkle {
@@ -37,26 +37,25 @@ body {
   }
 }
 
-/* Estilo para o conteúdo */
 .content {
     color: white;
     padding: 20px;
-    height: 2000px; /* Exemplo de conteúdo longo para rolar */
+    height: 2000px; 
     text-align: center;
 }
 
 .card {
-  height: 100%; /* Faz os cards ocuparem toda a altura disponível */
+  height: 100%; 
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
 
 .card-body {
-  flex-grow: 1; /* Faz com que os cards cresçam uniformemente */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribui o conteúdo */
+  justify-content: space-between;
 }
 
 .info{
@@ -67,12 +66,31 @@ body {
 }
 
 .nav-link{
+    position: relative;
     font-size: 30px;
+    transition: color 0.2s ease, font-size 0.2s ease;
 }
 
-.nav-link:hover{
-    color: #ffffff;
-    font-size: 31px;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #000000, #00e3fc );
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  font-size: 31px;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .container {
@@ -286,7 +304,7 @@ section{
     }
     
     .formatura {
-      max-width: 140px; /* Reduz a imagem em telas menores */
+      max-width: 140px; 
       max-height: 140px;
     }
   
@@ -295,25 +313,25 @@ section{
     }
   
     .info h1 {
-      word-wrap: break-word; /* Garante que palavras longas quebrem corretamente */
+      word-wrap: break-word;
       overflow-wrap: break-word;
-      max-width: 130%; /* Evita que o texto ultrapasse os limites do card */
+      max-width: 130%; 
     }
 
     .info p {
       font-size: 14px;
       display: inline-block;
-      word-break: keep-all; /* Evita quebra desnecessária */
-      line-height: 1.4; /* Ajusta o espaçamento entre linhas */
-      word-wrap: break-word; /* Quebra palavras longas automaticamente */
-      overflow-wrap: break-word; /* Garante a quebra em navegadores mais novos */
-      flex-wrap: wrap; /* Permite que o texto se ajuste dentro da div */
+      word-break: keep-all; 
+      line-height: 1.4;
+      word-wrap: break-word; 
+      overflow-wrap: break-word; 
+      flex-wrap: wrap; 
     }
 
     .info li {
-      word-wrap: break-word; /* Garante que palavras longas quebrem corretamente */
+      word-wrap: break-word;
       overflow-wrap: break-word;
-      white-space: normal; /* Impede que o texto fique em uma única linha */
-      max-width: 130%; /* Evita que o texto ultrapasse os limites do card */
+      white-space: normal; 
+      max-width: 130%; 
     }    
   }

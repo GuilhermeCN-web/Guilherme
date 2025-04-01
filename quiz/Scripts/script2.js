@@ -1,21 +1,21 @@
 document.addEventListener("keydown", function(event) {
     if (event.ctrlKey && (event.key === "u" || event.key === "U")) {
-        event.preventDefault(); // Impede a ação padrão (abrir o código-fonte)
-        window.location.href = "https://www.youtube.com/watch?v=f_k4gBdRXKA"; // Redireciona para o vídeo
+        event.preventDefault();
+        window.location.href = "https://www.youtube.com/watch?v=f_k4gBdRXKA";
     }
 });
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const respostaCorreta = "resposta-c"; // A resposta correta é "opacity"
-    const proximaPergunta = "pergunta3.html"; // Link para a próxima pergunta
-    const indexPagina = "../index.html"; // Página inicial para respostas erradas
+    const respostaCorreta = "resposta-c";
+    const proximaPergunta = "pergunta3.html";
+    const indexPagina = "../Index.html";
 
     const botoes = document.querySelectorAll(".resposta");
 
     botoes.forEach(botao => {
         botao.addEventListener("click", function () {
-            botoes.forEach(c => c.disabled = true); // Desativa os botões após resposta
+            botoes.forEach(c => c.disabled = true);
 
             if (this.id === respostaCorreta) {
                 this.style.backgroundColor = "green";
@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             alert(mensagem);
             window.location.href = link;
-        }, 500); // Pequeno delay para a cor mudar antes do alerta
+        }, 500); 
     }
 });
