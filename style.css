@@ -231,7 +231,7 @@ section{
   #earth {
     width: 100px;
     height: 100px;
-    background-image: url('./Img/terra.jpg');
+    background-image: url('./Img/terra.png');
     animation: moveEarth 30s infinite linear;
     top: 20%;
     left: 20%;
@@ -240,7 +240,7 @@ section{
   #uranus {
     width: 140px;
     height: 140px;
-    background-image: url('./Img/urano.jpg');
+    background-image: url('./Img/urano.png');
     animation: moveUranus 28s infinite linear;
     top: 20%;
     left: 20%;
@@ -249,7 +249,7 @@ section{
   #mars {
     width: 80px;
     height: 80px;
-    background-image: url('./Img/marte.jpg');
+    background-image: url('./Img/marte.png');
     animation: moveMars 50s infinite linear;
     top: 25%;
     left: 25%;
@@ -258,7 +258,7 @@ section{
   #saturn {
     width: 160px;
     height: 160px;
-    background-image: url('./Img/saturno.jpg');
+    background-image: url('./Img/saturno.png');
     animation: moveSaturn 20s infinite linear;
     top: 10%;
     left: 70%;
@@ -267,7 +267,7 @@ section{
   #neptune {
     width: 140px;
     height: 140px;
-    background-image: url('./Img/netuno.jpg');
+    background-image: url('./Img/netuno.png');
     animation: moveNeptune 40s infinite linear;
     top: 10%;
     left: 70%;

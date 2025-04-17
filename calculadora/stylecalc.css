@@ -1,10 +1,8 @@
-/* Define a caixa de modelo para incluir bordas e preenchimento no tamanho total do elemento */
 html {
     box-sizing: border-box;
     height: 100%;
 }
 
-/* Aplica a mesma caixa de modelo a todos os elementos e seus pseudo-elementos */
 *,
 *::before,
 *::after {
@@ -13,36 +11,33 @@ html {
     padding: 0;
 }
 
-/* Estiliza o corpo da página */
 body {
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    background-color: linear-gradient(320deg, #eb08eb, #ffef20, #63c8b3); /* Aplica um gradiente de fundo */
-    display: flex; /* Usa flexbox para organização */
-    font-family: 'Dosis', 'sans-serif'; /* Define a fonte principal */
+    align-items: center; 
+    background-color: linear-gradient(320deg, #eb08eb, #ffef20, #63c8b3);
+    display: flex; 
+    font-family: 'Dosis', 'sans-serif'; 
     font-display: swap;
-    height: inherit; /* Garante que o body ocupe a altura total */
-    justify-content: center; /* Centraliza horizontalmente */
+    height: inherit; 
+    justify-content: center; 
 }
 
-/* Estiliza o contêiner principal da calculadora */
 .wrapper {
-    backdrop-filter: blur(5.5px); /* Aplica um efeito de desfoque no fundo */
-    -webkit-backdrop-filter: blur(5.5px); /* Suporte para navegadores WebKit */
-    background-color: green; /* Cor de fundo */
-    border: 1px solid black; /* Borda preta */
-    border-radius: 18px; /* Bordas arredondadas */
-    box-shadow: 0 4px 30px darkred; /* Sombra do contêiner */
-    color: black; /* Cor do texto */
+    backdrop-filter: blur(5.5px); 
+    -webkit-backdrop-filter: blur(5.5px); 
+    background-color: green; 
+    border: 1px solid black; 
+    border-radius: 18px; 
+    box-shadow: 0 4px 30px darkred;
+    color: black; 
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    background-color: grey; /* Outra definição de cor de fundo (sobrescreve a anterior) */
-    border: 10px solid orange; /* Borda cinza */
-    flex-basis: 400px; /* Define a largura base */
-    height: 540px; /* Define a altura */
-    padding: 20px 35px; /* Espaçamento interno */
+    background-color: grey; 
+    border: 10px solid orange; 
+    flex-basis: 400px; 
+    height: 540px;
+    padding: 20px 35px;
 }
 
-/* Estiliza a tela onde os números e operações aparecem */
 .screen {
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
@@ -52,20 +47,18 @@ body {
     box-shadow: 0 4px 30px black;
     color: black;
     font-size: 35px;
-    overflow: auto; /* Permite rolagem caso necessário */
+    overflow: auto; 
     padding: 20px;
-    text-align: right; /* Alinha o texto à direita */
+    text-align: right;
     width: 330px;
 }
 
-/* Linha de botões da calculadora */
 .calc-button-row {
-    display: flex; /* Exibe os botões em uma linha */
-    justify-content: space-between; /* Distribui os botões uniformemente */
-    margin: 5% 0; /* Espaçamento entre as linhas */
+    display: flex; 
+    justify-content: space-between;
+    margin: 5% 0;
 }
 
-/* Estiliza os botões da calculadora */
 .calc-button {
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
@@ -75,12 +68,26 @@ body {
     box-shadow: 0 4px 30px black;
     color: black;
     font-size: 24px;
-    flex-basis: 20%; /* Cada botão ocupa 20% da linha */
+    flex-basis: 20%; 
     font-family: inherit;
-    height: 65px; /* Corrigido: altura estava sem unidade */
+    height: 65px; 
 }
 
-/* Estiliza o último botão de cada linha */
+.calc-button-double {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 18px;
+    box-shadow: 0 4px 30px black;
+    color: black;
+    font-size: 24px;
+    flex-basis: 47%;
+    font-family: inherit;
+    height: 65px;
+}
+
+
 .calc-button:last-child {
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
@@ -89,31 +96,26 @@ body {
     border-radius: 18px;
     box-shadow: 0 4px 30px black;
     color: white;
-    background-color: #d271d2; /* Cor específica para esse botão */
+    background-color: #d271d2;
 }
 
-/* Efeito ao passar o mouse sobre o último botão */
 .calc-button:last-child:hover {
     background-color: inherit;
     color: inherit;
 }
 
-/* Efeito ao passar o mouse sobre qualquer botão */
 .calc-button:hover {
     background-color: inherit;
 }
 
-/* Efeito ao pressionar um botão */
 .calc-button:active {
     background-color: yellow;
 }
 
-/* Define botões que ocupam espaço duplo */
 .double {
     flex-basis: 47%;
 }
 
-/* Define botões que ocupam espaço triplo */
 .triple {
     flex-basis: 73%;
     margin-right: 25px;
@@ -121,6 +123,6 @@ body {
 }
 
 .result {
-    color: red; /* Escolha a cor que deseja para o resultado */
+    color: red; 
     font-weight: bold;
 }
