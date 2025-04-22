@@ -221,11 +221,18 @@ section{
     100% { opacity: 0.3; }
   }
   
-  #earth, #saturn, #mars, #uranus, #neptune {
+  #earth, #saturn, #mars, #uranus, #neptune, #apolo {
     position: absolute;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+  }
+
+  #apolo{
+    height: 40px;
+    width: 100px;
+    background-image: url('./Img/apolo.jpg');
+    animation: moveApolo 8s infinite linear;
   }
   
   #earth {
@@ -233,8 +240,8 @@ section{
     height: 100px;
     background-image: url('./Img/terra.png');
     animation: moveEarth 30s infinite linear;
-    top: 20%;
-    left: 20%;
+    top: 25%;
+    left: 25%;
   }
 
   #uranus {
@@ -286,6 +293,11 @@ section{
   @keyframes moveMars {
     0% { top: 70%; left: 10%; }
     100% { top: 70%; left: 70%; }
+  }
+
+  @keyframes moveApolo {
+    0% { top: 70%; left: 0%; }
+    100% { top: 70%; left: 100%; }
   }
   
   @keyframes moveSaturn {
