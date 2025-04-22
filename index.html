@@ -9,19 +9,35 @@
     <title>Meu próprio website</title>
 </head>
 <body style="background-color: black;">
-        <header>
-            <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill">Início</i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="sobre mim.html"><i class="bi bi-journal-code">Sobre mim</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projetos.html"><i class="bi bi-clipboard-data">Projetos</i></a>
-                  </li>
-              </ul>
-        </header>
+    <header>
+        <ul class="nav">
+          <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <div class="btn-group dropdown">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tema
+              </button>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="index.html">Espaço</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="tema corrida/index.html">Corrida</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Em breve</a>
+          </div>
+          </div>
+          </li>
+        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill">Início</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre mim.html"><i class="bi bi-journal-code">Sobre mim</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projetos.html"><i class="bi bi-clipboard-data">Projetos</i></a>
+            </li>
+          </ul>
+    </header>
         <section class="devi" id="technologies">
             <div style="background-color: rgb(0, 0, 0); color: white;" class="jumbotron">
                 <h1 class="display-4"><strong><span id="titulo"></span></strong></h1>
@@ -29,9 +45,9 @@
                 <hr class="my-4">
                 <p class="paragrafo"><span id="paragrafo2"></span></p>
               </div>      
-              <div id="space">
-                <div id="earth"></div>
-                <div id="saturn"></div>
+              <div id="espaço">
+                <div id="terra"></div>
+                <div id="saturno"></div>
               </div>                                   
             <div style="background-color: black; color: white; margin-bottom: 500px;" col="sm-12">
             <h2>Tecnologias e linguagens que estudei e estudo:</h2>
@@ -55,10 +71,10 @@
                 <a href="https://www.google.com/search?q=typescript&client=opera-gx&hs=vck&sca_esv=ea93a93fa601efe3&sxsrf=AHTn8zpKKMB1ivFpaze3TThd-yFUmunoSw%3A1740670565938&ei=ZYbAZ6r3OOLT1sQP74e12Q4&ved=0ahUKEwjqvYOWl-SLAxXiqZUCHe9DLesQ4dUDCBA&uact=5&oq=typescript&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnR5cGVzY3JpcHQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBhDGIoFMgUQABiABDIFEAAYgARI4R9QwglYrx5wAXgBkAEAmAGGA6AB5g-qAQcwLjcuMC4zuAEDyAEA-AEBmAILoAL5EMICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgITEC4YgAQYsAMYQxjIAxiKBdgBAcICGRAuGIAEGLADGNEDGEMYxwEYyAMYigXYAQHCAgoQIxiABBgnGIoFwgIMEAAYgAQYQxiKBRgKwgIKEC4YgAQYQxiKBcICCRAAGIAEGAEYCsICBxAAGIAEGAqYAwCIBgGQBgy6BgQIARgIkgcJMS43LjAuMi4xoAfaOw&sclient=gws-wiz-serp"><img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" /></a>
             </div>
             </div>
-            <div id="space">
-                <div id="mars"></div>
-                <div id="uranus"></div>
-                <div id="neptune"></div>
+            <div id="espaço">
+                <div id="marte"></div>
+                <div id="urano"></div>
+                <div id="netuno"></div>
             </div> 
             <h1 style="color: white;"><span id="titulo2"></span></h1>
             <div class="col-sm-12">
@@ -69,7 +85,7 @@
                     <img height="300px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GuilhermeCN-web&layout=compact&langs_count=16&theme=dracula" alt="GitHub stats" />
                 </a>
             </section>
-        <div style="height: 100px;" id="space">
+        <div style="height: 100px;" id="espaço">
             <div id="apolo"></div>
         </div>
         <footer>
