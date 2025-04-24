@@ -4,8 +4,8 @@ body {
   }
 
   .pneu{
-    height: 68px;
-    width: 68px;
+    height: 55px;
+    width: 55px;
     background-color: transparent;
     border-radius: 50%;
     border: 17px solid black; 
@@ -18,7 +18,7 @@ body {
   }
 
   .pista {
-    background-color: #807f7f;
+    background-color: #3E3D3D;
     border: solid white 4px;
     width: 100%;
     height: 200px;
@@ -26,7 +26,26 @@ body {
     border-right: none;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0;
+  }
+  
+
+  .linha{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .branco{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+  }
+
+  .preto{
+    height: 20px;
+    width: 20px;
+    background-color: black;
   }
 
   .faixas {
@@ -41,36 +60,88 @@ body {
     background-color: white;
   }
 
-  #carro{
-      position: absolute;
-      height: 80px;
-      width: 230px;
-      background-image: url('../Img/carro.png');
-      animation: moveCarro 0.9s infinite linear;
-      background-size: cover;
-      background-position: center;
-  }
+  #carro {
+    position: absolute;
+    height: 80px;
+    width: 230px;
+    margin-left: 40px;
+    margin-bottom: 110px;
+    background-image: url('../Img/carro.png');
+    background-size: cover;
+    background-position: center;
+    animation: moveCarro 2.5s forwards;
+    animation-delay: 5s;
+}
 
-  #carro2{
-      position: absolute;
-      height: 80px;
-      width: 230px;
-      background-image: url('../Img/carro.png');
-      animation: moveCarro2 1s infinite linear;
-      background-size: cover;
-      background-position: center;
-  }
-  @keyframes moveCarro{
-      0% { top: 18%; left: 100%; }
-      50% { top: 17%; left: 50%; }
-      100% { top: 19%; left: 0%; }
-  }
+@keyframes moveCarro {
+    0% { top: 50%; left: 0%; }
+    30% { top: 50.6%; left: 110%; }
+    50% { opacity: 0; }
+    99% { opacity: 0; }
+    100% { top: 50%; left: 0%;}
+    100% { opacity: 0; }
+}
 
-  @keyframes moveCarro2{
-      0% { top: 33%; left: 100%; }
-      50% { top: 31%; left: 50%; }
-      100% { top: 34%; left: 0%; }
-  }
+#carro2 {
+    position: absolute;
+    height: 80px;
+    width: 230px;
+    margin-left: 40px;
+    margin-top: 105px;
+    background-image: url('../Img/carro.png');
+    background-size: cover;
+    background-position: center;
+    animation: moveCarro2 2.5s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes moveCarro2 {
+    0% { top: 49%; left: 0%; }
+    30% { top: 49.4%; left: 110%; }
+    50% { opacity: 0; }
+    99% { opacity: 0; }
+    100% { top: 50%; left: 0%;}
+    100% { opacity: 0; }
+}
+
+#carro3 {
+  position: absolute;
+  height: 80px;
+  width: 230px;
+  margin-left: 40px;
+  margin-bottom: 110px;
+  background-image: url('../Img/carro.png');
+  background-size: cover;
+  background-position: center;
+  transform: rotate(180deg);
+  animation: moveCarro3 10s forwards;
+}
+
+@keyframes moveCarro3 {
+  0% { opacity: 0;}
+  30% { top: 118%; left: 82%;}
+  60% { opacity: 0;}
+  65% { opacity: 1;}
+  70% { top: 118%; left: 110%}
+  78% { top: 118%; left: -30%}
+  80% { opacity: 1;}
+  81% { opacity: 0;}
+  100% { top: 118%; left: 0%;}
+  100% { opacity: 0;}
+}
+
+#carro4 {
+  position: absolute;
+  height: 80px;
+  width: 230px;
+  margin-left: 40px;
+  margin-top: 105px;
+  background-image: url('../Img/carro.png');
+  background-size: cover;
+  background-position: center;
+  transform: rotate(180deg);
+  animation: moveCarro3 13s forwards;
+}
 
   header{
     font-size: 32px;
@@ -78,6 +149,21 @@ body {
     color: black;
     padding-left: 40px;
     display: flex;
+}
+
+.typing span {
+  display: inline-block;
+  opacity: 0;
+  animation: typing 0.05s steps(1) forwards;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
   .nav-link{
@@ -123,4 +209,61 @@ body {
 .devicon:active{
 height: 101px;
 width: 101px;
+}
+
+footer{
+  background-color: #181841;
+  color: #ffffff;
+  padding-left: 40px;
+  margin-top: 100px;
+  display: flex;
+  height: 100px;
+}
+
+.f1-lights {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.back-board {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 50%;
+  height: 5%;
+  background: #000;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.light-strip {
+  background: black;
+  border-radius: 11px;
+  margin: 0 8px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding: 10px 0;
+}
+
+.light {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #222;
+  margin: 8px 0;
+}
+
+.vermelho {
+  background: red !important;
+}
+
+.verde {
+  background: rgb(0, 255, 0) !important;
 }

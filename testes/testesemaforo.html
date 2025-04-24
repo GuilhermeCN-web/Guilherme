@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sequência Semáforo F1</title>
+  <style>
+    body {
+      background: #2ecc40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .f1-lights {
+      display: flex;
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .back-board {
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      top: 50%;
+      height: 5%;
+      background: #000;
+      transform: translateY(-50%);
+      z-index: 0;
+    }
+
+    .light-strip {
+      background: black;
+      border-radius: 11px;
+      margin: 0 8px;
+      position: relative;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      padding: 10px 0;
+    }
+
+    .light {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #222;
+      margin: 8px 0;
+    }
+
+    .vermelho {
+      background: red !important;
+    }
+
+    .verde {
+      background: rgb(41, 152, 41) !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="f1-lights">
+    <div class="back-board"></div>
+
+    <div class="light-strip">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+
+    <div class="light-strip">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+
+    <div class="light-strip">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+
+    <div class="light-strip">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+
+    <div class="light-strip">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+    </div>
+  </div>
+
+  <script>
+    function delay(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+  
+    async function acenderSequencia() {
+      const faixas = document.querySelectorAll('.light-strip');
+  
+      // 1. Acende apenas as duas luzes inferiores da esquerda para a direita em vermelho
+      for (let j = 0; j < 5; j++) {
+  const luz1 = faixas[j].children[2]; // Primeiro elemento (índice 2)
+  const luz2 = faixas[j].children[3]; // Segundo elemento (índice 3)
+  
+  luz1.classList.add('vermelho');
+  luz2.classList.add('vermelho');
+  
+  await delay(500);
+}
+  
+      // 2. Apaga essas duas luzes vermelhas
+      for (let j = 0; j < 5; j++) {
+        faixas[j].children[3].classList.remove('vermelho');
+        faixas[j].children[2].classList.remove('vermelho');
+      }
+  
+      await delay(500);
+  
+      // 3. Acende todas as outras luzes (de cima) em verde
+      for (let j = 0; j < faixas.length; j++) {
+        for (let i = 0; i < 2; i++) { // de 0 até 2 = parte de cima
+          faixas[j].children[i].classList.add('verde');
+        }
+      }
+    }
+  
+    window.addEventListener("load", acenderSequencia);
+  </script>
+</body>
+</html>
