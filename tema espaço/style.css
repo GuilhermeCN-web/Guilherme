@@ -4,6 +4,7 @@ html, body {
     height: 100%;
     overflow-x: hidden; 
     height: 100%;
+    background-color: black;
 }
 
 body {
@@ -11,9 +12,33 @@ body {
     margin: 0;
     padding: 0;
   overflow-y: auto; 
+  background-color: #000; 
+}
+
+.star {
+  position: absolute;
+  width: 2px; 
+  height: 2px; 
+  background-color: white; 
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle infinite; 
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 
 .content {
+    color: white;
     padding: 20px;
     height: 2000px; 
     text-align: center;
@@ -50,10 +75,10 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 3px;
+  bottom: -3px;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, #ffffff);
+  background: linear-gradient(to right, #000000, #00e3fc );
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.9s ease-in-out;
@@ -81,8 +106,9 @@ body {
     height: 300px;
     width: 300px;
     margin-top: 26px;
+    border: solid rgb(255, 208, 0) 10px;
+    box-shadow: 0 4px 35px darkorange;
     margin-right: 10px;
-    border: solid black 5px;
 }
 
 li{
@@ -91,7 +117,7 @@ li{
 
 header{
     font-size: 32px;
-    background-color: darkgray;
+    background-color: #181841;
     padding-left: 40px;
     display: flex;
 }
@@ -131,11 +157,15 @@ section{
     border-collapse: inherit;
 }
 
+.hello{
+    background-color: rgb(148, 56, 234);
+    text-align: center;
+}
+
 .devi{
     text-align: center;
     width: 100%;
     border: 0px;
-    margin-top: 20px;
 }
 
 .devicon{
@@ -172,6 +202,112 @@ section{
     background-repeat: no-repeat;  
 }
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #espaço {
+    position: relative;
+    height: 450px;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+  }
+  
+  #terra, #saturno, #marte, #urano, #netuno, #apolo {
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #apolo{
+    height: 40px;
+    width: 100px;
+    background-image: url('./Img/apolo.jpg');
+    animation: moveApolo 8s infinite linear;
+  }
+  
+  #terra {
+    width: 100px;
+    height: 100px;
+    background-image: url('./Img/terra.png');
+    animation: moveTerra 30s infinite linear;
+    top: 25%;
+    left: 25%;
+  }
+
+  #urano {
+    width: 140px;
+    height: 140px;
+    background-image: url('./Img/urano.png');
+    animation: moveUrano 28s infinite linear;
+    top: 20%;
+    left: 20%;
+  }
+
+  #marte {
+    width: 80px;
+    height: 80px;
+    background-image: url('./Img/marte.png');
+    animation: moveMarte 50s infinite linear;
+    top: 25%;
+    left: 25%;
+  }
+
+  #saturno {
+    width: 160px;
+    height: 160px;
+    background-image: url('./Img/saturno.png');
+    animation: moveSaturno 20s infinite linear;
+    top: 10%;
+    left: 70%;
+  }
+  
+  #netuno {
+    width: 140px;
+    height: 140px;
+    background-image: url('./Img/netuno.png');
+    animation: moveNetuno 40s infinite linear;
+    top: 10%;
+    left: 70%;
+  }
+
+  @keyframes moveTerra {
+    0% { top: 20%; left: 20%; }
+    100% { top: 80%; left: 50%; }
+  }
+
+  @keyframes moveUrano {
+    0% { top: 20%; left: 20%; }
+    100% { top: 80%; left: 80%; }
+  }
+
+  @keyframes moveMarte {
+    0% { top: 70%; left: 10%; }
+    100% { top: 70%; left: 70%; }
+  }
+
+  @keyframes moveApolo {
+    0% { top: 70%; left: 0%; }
+    100% { top: 70%; left: 100%; }
+  }
+  
+  @keyframes moveSaturno {
+    0% { top: 10%; left: 70%; }
+    100% { top: 20%; left: 30%; }
+  }
+
+  @keyframes moveNetuno {
+    0% { top: 10%; left: 70%; }
+    100% { top: 90%; left: 90%; }
+  }
 
   @media (max-width: 768px) {
     .container {
