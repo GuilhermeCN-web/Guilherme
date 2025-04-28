@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    margin: auto;
+}
+
+h2{
+    background-color: black;
+    color: blue;
+    text-decoration: underline;
+}
+
+pre{
+    background-color: rgb(48, 4, 62);
+    color: aqua;
+    text-align: left;
+    font-size: 24px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: rgb(71, 71, 71);
+    color: greenyellow;
+    height: 100px;
+    width: 250px;
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: rgb(71, 71, 71);
+    color: rgb(255, 170, 0);
+    transition: 0.4;
+}
+
+button:active{
+    background-color: red;
+    color: blueviolet;
+}
