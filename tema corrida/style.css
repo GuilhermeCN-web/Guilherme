@@ -3,6 +3,51 @@ body {
     margin: 0;
   }
 
+  .container {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    margin-right: 100px;
+    width: auto;
+    background-color: rgb(42, 195, 47);
+  }
+
+  li{
+    font-size: 20px;
+}
+
+  .card {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.formatura{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin-top: 26px;
+    margin-right: 10px;
+    border: solid red 5px;
+    box-shadow: 0 4px 30px black;
+}
+
+.info{
+  padding-left: 20px;
+  margin-bottom: 100px;
+  flex: 1;
+  background-color: rgb(42, 195, 47);
+  margin-left: 20px;
+}
+
   .pneu{
     height: 55px;
     width: 55px;
@@ -10,6 +55,12 @@ body {
     border-radius: 50%;
     border: 17px solid black; 
   }
+
+  .content {
+    padding: 20px;
+    height: 2000px; 
+    text-align: center;
+}
 
   .pneus{
     display: flex;
@@ -74,8 +125,8 @@ body {
 }
 
 @keyframes moveCarro {
-    0% { top: 50%; left: 0%; }
-    30% { top: 50.6%; left: 110%; }
+    0% { top: 52%; left: 0%; }
+    30% { top: 52.6%; left: 110%; }
     50% { opacity: 0; }
     99% { opacity: 0; }
     100% { top: 50%; left: 0%;}
@@ -96,8 +147,8 @@ body {
 }
 
 @keyframes moveCarro2 {
-    0% { top: 49%; left: 0%; }
-    30% { top: 49.4%; left: 110%; }
+    0% { top: 51%; left: 0%; }
+    30% { top: 51.4%; left: 110%; }
     50% { opacity: 0; }
     99% { opacity: 0; }
     100% { top: 50%; left: 0%;}
@@ -119,14 +170,14 @@ body {
 
 @keyframes moveCarro3 {
   0% { opacity: 0;}
-  30% { top: 118%; left: 82%;}
+  30% { top: 120%; left: 82%;}
   60% { opacity: 0;}
   65% { opacity: 1;}
-  70% { top: 118%; left: 110%}
-  78% { top: 118%; left: -30%}
+  70% { top: 120%; left: 110%}
+  78% { top: 120%; left: -30%}
   80% { opacity: 1;}
   81% { opacity: 0;}
-  100% { top: 118%; left: 0%;}
+  100% { top: 120%; left: 0%;}
   100% { opacity: 0;}
 }
 
@@ -141,6 +192,43 @@ body {
   background-position: center;
   transform: rotate(180deg);
   animation: moveCarro3 13s forwards;
+}
+
+#carro5 {
+  position: absolute;
+  height: 80px;
+  width: 230px;
+  margin-left: 40px;
+  margin-top: 105px;
+  background-image: url('../Img/carro.png');
+  background-size: cover;
+  background-position: center;
+  animation: moveCarro4 17s forwards;
+}
+
+#carro6 {
+  position: absolute;
+  height: 80px;
+  width: 230px;
+  margin-left: 40px;
+  margin-top: 105px;
+  background-image: url('../Img/carro.png');
+  background-size: cover;
+  background-position: center;
+  animation: moveCarro4 18s forwards;
+}
+
+@keyframes moveCarro4 {
+  0% { opacity: 0;}
+  30% { top: 185%; left: 82%;}
+  60% { opacity: 0;}
+  65% { opacity: 1;}
+  70% { top: 185%; left: -30%}
+  78% { top: 185%; left: 110%}
+  80% { opacity: 1;}
+  81% { opacity: 0;}
+  100% { top: 185%; left: 0%;}
+  100% { opacity: 0;}
 }
 
   header{
@@ -268,4 +356,14 @@ footer{
 
 .verde {
   background: rgb(0, 255, 0) !important;
+}
+
+.jumbotron {
+  padding: 50px;
+  text-align: center;
+}
+
+section{
+  border: inherit;
+  border-collapse: inherit;
 }
