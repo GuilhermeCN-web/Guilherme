@@ -181,10 +181,6 @@ section{
       max-width: 140px; 
       max-height: 140px;
     }
-  
-    .card {
-      padding: 15px;
-    }
 
     .github_stats{
       width: 300px;

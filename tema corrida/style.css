@@ -380,7 +380,7 @@ section{
   border-collapse: inherit;
 }
 
-@media (max-width: 348px) {
+@media (max-width: 768px) {
   .container {
     max-width: 100%;
   }
