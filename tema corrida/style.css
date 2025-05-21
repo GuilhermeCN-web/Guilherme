@@ -380,7 +380,7 @@ section{
   border-collapse: inherit;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 348px) {
   .container {
     max-width: 100%;
   }
@@ -431,41 +431,15 @@ section{
     background-color: white;
   }
 
-  #carro, #carro2, #carro5, #carro6 {
-    height: 40px;
-    width: 115px;
-    margin-left: 20px;
-    margin-bottom: 50px;
-    background-image: url('../Img/carro.png');
-    background-size: cover;
-    background-position: center;
-    animation: moveCarro 2.5s forwards;
-    animation-delay: 5s;
+  #carro, #carro2, #carro3, #carro4, #carro5, #carro6 {
+    height: 1px;
+    width: 1px;
+    background-color: transparent;
   }
 
-  #carro3 {
-    height: 40px;
-    width: 115px;
-    margin-left: 20px;
-    margin-top: 50px;
-    background-image: url('../Img/carro.png');
-    background-size: cover;
-    background-position: center;
-    transform: rotate(180deg);
-    animation: moveCarro3 10s forwards;
-  }
-
-  #carro4 {
-    height: 40px;
-    width: 115px;
-    margin-left: 20px;
-    margin-top: 50px;
-    background-image: url('../Img/carro.png');
-    background-size: cover;
-    background-position: center;
-    transform: rotate(180deg);
-    animation: moveCarro3 13s forwards;
-  }
+  .github_stats{
+      width: 300px;
+    }
 
   .pista {
     background-color: #3E3D3D;

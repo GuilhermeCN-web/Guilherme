@@ -185,6 +185,10 @@ section{
     .card {
       padding: 15px;
     }
+
+    .github_stats{
+      width: 300px;
+    }
   
     .info h1 {
       word-wrap: break-word;

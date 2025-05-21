@@ -309,11 +309,15 @@ section{
     100% { top: 90%; left: 90%; }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 348px) {
     .container {
       max-width: 100%;
     }
-    
+
+    .github_stats{
+      width: 300px;
+    }
+  
     .formatura {
       max-width: 140px; 
       max-height: 140px;
