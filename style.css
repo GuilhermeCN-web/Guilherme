@@ -83,13 +83,13 @@ li{
 
 header{
     font-size: 32px;
-    background-color: darkgray;
+    background-color: #343A40;
     padding-left: 40px;
     display: flex;
 }
 
 footer{
-    background-color: #181841;
+    background-color: #343A40;
     color: #ffffff;
     padding-left: 40px;
     margin-top: 100px;
