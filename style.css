@@ -134,7 +134,9 @@ section{
     height: 100px;
     width: 100px;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    margin: 0.7rem;
+    margin-bottom: 2rem;
 }
 
 .devicon:hover{
