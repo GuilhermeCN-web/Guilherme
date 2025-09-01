@@ -7,7 +7,7 @@ body {
 
 .content {
     padding: 20px;
-    height: 2000px; 
+    height: 500px; 
     text-align: center;
 }
 
@@ -23,6 +23,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card-img-top {
+  width: 10rem;
+  height: 20rem;
+  border-radius: 10px;
 }
 
 .info{
