@@ -5,7 +5,6 @@ Welcome to my personal website! This platform showcases the programming language
 
 ## Features
 - **Tech Stack**: A detailed list of programming languages, frameworks, and tools I have mastered or am learning.
-- **Blog**: Personal thoughts and experiences related to technology and life.
 - **Projects**: A showcase of projects demonstrating my skills and creativity.
 - **Contact**: Ways to connect with me for networking and collaboration.
 
@@ -21,7 +20,5 @@ Visit: <a href="https://guilhermecn-web.github.io/Guilherme/">https://guilhermec
 ## Future Enhancements
 - More interactive content
 - Improved UI/UX
-- Additional learning resources
 
 Stay tuned for updates, and feel free to explore my site!
-
