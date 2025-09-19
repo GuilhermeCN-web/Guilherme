@@ -7,7 +7,6 @@ body {
 
 .content {
     padding: 20px;
-    height: 500px; 
     text-align: center;
 }
 
@@ -100,7 +99,7 @@ footer{
     padding-left: 40px;
     margin-top: 100px;
     display: flex;
-    height: 100px;
+    height: 150px;
 }
 
 /* Animação de digitação */
